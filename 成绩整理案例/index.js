@@ -1,10 +1,11 @@
 const fs = require('fs');
+// 读文件
 fs.readFile('./成绩-未整理.txt',function (err,data){
     if(err){
         return console.log('读取失败！',err);
     }
     /*
-    * 处理
+    * 处理文件数据
     * */
     data = data.toString();
     const arr = data.split(' ');
